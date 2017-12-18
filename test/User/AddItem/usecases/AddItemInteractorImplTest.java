@@ -10,11 +10,11 @@ import org.junit.Test;
  */
 public class AddItemInteractorImplTest
 {
-    private AddItemGroupInteractorImpl interactor;
+    private AddItemInteractorImpl interactor;
     @Before
     public void setUp()
     {
-        interactor = new AddItemGroupInteractorImpl();
+        interactor = new AddItemInteractorImpl();
     }
 
     @Test
@@ -23,7 +23,7 @@ public class AddItemInteractorImplTest
         GatewaySuccessfulStub gateway = new GatewaySuccessfulStub();
         interactor.setGateway(gateway);
         Item item = new Item();
-        Assert.assertEquals(interactor.AddItem(item), interactor.ITEM_ADDITION_SUCCESS);
+        Assert.assertEquals(interactor.insertItem(item), interactor.ITEM_ADDITION_SUCCESS);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class AddItemInteractorImplTest
         GatewayFailureStub gateway = new GatewayFailureStub();
         interactor.setGateway(gateway);
         Item item = new Item();
-        Assert.assertEquals(interactor.AddItem(item), interactor.ITEM_ADDITION_FAILURE);
+        Assert.assertEquals(interactor.insertItem(item), interactor.ITEM_ADDITION_FAILURE);
     }
 
 }

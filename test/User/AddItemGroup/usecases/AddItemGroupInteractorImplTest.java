@@ -1,6 +1,5 @@
 package User.AddItemGroup.usecases;
 
-import User.AddItemGroup.usecases.AddItemGroupInteractorImpl;
 import User.entities.Group;
 import org.junit.Assert;
 import org.junit.Before;
@@ -19,7 +18,7 @@ public class AddItemGroupInteractorImplTest
     }
 
     @Test
-    public void AddNewItemSuccess()
+    public void AddNewGroupSuccess()
     {
         GatewaySuccessfulStub gateway = new GatewaySuccessfulStub();
         interactor.setGateway(gateway);
@@ -28,7 +27,7 @@ public class AddItemGroupInteractorImplTest
     }
 
     @Test
-    public void AddNewItemFail()
+    public void AddNewGroupFail()
     {
         GatewayFailureStub gateway = new GatewayFailureStub();
         interactor.setGateway(gateway);

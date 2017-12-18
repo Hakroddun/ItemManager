@@ -5,7 +5,7 @@ import User.entities.Item;
 /**
  * Created by gideon on 7/28/2017.
  */
-public class AddItemGroupInteractorImpl implements AddItemInteractor
+public class AddItemInteractorImpl implements AddItemInteractor
 {
     private GatewayInterface gateway;
 
@@ -14,7 +14,7 @@ public class AddItemGroupInteractorImpl implements AddItemInteractor
         this.gateway = gateway;
     }
 
-    String AddItem(Item item)
+    String insertItem(Item item)
     {
         int status = gateway.insertItem(item);
         if (status == 0)
