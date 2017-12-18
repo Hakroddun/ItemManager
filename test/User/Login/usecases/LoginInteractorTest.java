@@ -2,7 +2,7 @@ package User.Login.usecases;
 
 import User.Login.authoriser.InvalidAuthoriserStub;
 import User.Login.authoriser.ValidAuthoriserStub;
-import User.Login.entities.UserStub;
+import User.entities.UserStub;
 import org.hamcrest.CoreMatchers;
 import org.junit.Before;
 import org.junit.Test;

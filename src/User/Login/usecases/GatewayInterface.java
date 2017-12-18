@@ -1,7 +1,7 @@
 package User.Login.usecases;
 
 import User.Login.authoriser.UserID;
-import User.Login.entities.User;
+import User.entities.User;
 
 /**
  * Created by gideon on 7/14/2017.

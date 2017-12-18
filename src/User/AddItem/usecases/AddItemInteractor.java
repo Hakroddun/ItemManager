@@ -1,15 +1,7 @@
 package User.AddItem.usecases;
 
-import User.AddItem.entities.Item;
-
-/**
- * Created by gideon on 7/28/2017.
- */
-class AddItemInteractor
+public interface AddItemInteractor
 {
-    boolean AddItem(Item item)
-    {
-
-        return true;
-    }
+    String ITEM_ADDITION_FAILURE = "Item Addition Failed";
+    String ITEM_ADDITION_SUCCESS = "Item Addition Successful";
 }

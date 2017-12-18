@@ -1,4 +1,4 @@
-package User.Login.entities;
+package User.entities;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -21,7 +21,7 @@ public class UserStub extends User
         return STUB_TIME;
     }
 
-    public String getName() {
+    public String getUserName() {
         return STUB_NAME;
     }
 }

@@ -2,7 +2,7 @@ package User.Login.usecases;
 
 import User.Login.authoriser.Authoriser;
 import User.Login.authoriser.UserID;
-import User.Login.entities.User;
+import User.entities.User;
 
 /**
  * Created by gideon on 7/13/2017.
@@ -32,7 +32,7 @@ public class LoginInteractorImpl implements LoginInteractor
 
     private void PopulateUserResponse()
     {
-        response.Name = user.getName();
+        response.Name = user.getUserName();
         response.AccessLevel = user.getAccessLevel();
         response.LastLogin = user.getLastLoginDate();
     }
@@ -46,7 +46,8 @@ public class LoginInteractorImpl implements LoginInteractor
         {
             user = gateway.getUser(userID);
             PopulateUserResponse();
-        } else
+        }
+        else
         {
             response.AccessLevel = 0;
         }
