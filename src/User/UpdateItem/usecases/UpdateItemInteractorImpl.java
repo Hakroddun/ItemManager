@@ -5,7 +5,7 @@ import User.entities.Item;
 /**
  * Created by gideon on 7/28/2017.
  */
-public class AddItemInteractorImpl implements AddItemInteractor
+public class UpdateItemInteractorImpl implements UpdateItemInteractor
 {
     private GatewayInterface gateway;
 
