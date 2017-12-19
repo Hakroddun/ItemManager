@@ -1,6 +1,5 @@
 package User.AddItemGroup.usecases;
 
-import User.AddItemGroup.usecases.GatewayInterface;
 import User.entities.Group;
 
 public class GatewayFailureStub implements GatewayInterface

@@ -1,11 +1,11 @@
-package User.AddItemGroup.usecases;
+package User.DeleteUser.usecases;
 
-import User.entities.Group;
+import User.entities.User;
 
 public class GatewaySuccessfulStub implements GatewayInterface
 {
     @Override
-    public int insertItemGroup(Group itemGroup)
+    public int deleteUser(User user)
     {
         return 0;
     }

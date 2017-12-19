@@ -1,6 +1,5 @@
 package User.DeleteItemGroup.usecases;
 
-import User.DeleteItemGroup.usecases.DeleteItemGroupInteractorImpl;
 import User.entities.Group;
 import org.junit.Assert;
 import org.junit.Before;

@@ -1,8 +1,6 @@
 package User.AddClient.usecases;
 
-import User.AddUser.usecases.AddUserInteractorImpl;
 import User.entities.Client;
-import User.entities.User;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

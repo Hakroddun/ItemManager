@@ -1,6 +1,5 @@
 package User.DeleteItem.usecases;
 
-import User.DeleteItem.usecases.DeleteItemInteractorImpl;
 import User.entities.Item;
 import org.junit.Assert;
 import org.junit.Before;

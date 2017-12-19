@@ -1,6 +1,5 @@
 package User.UpdateItem.usecases;
 
-import User.UpdateItem.usecases.GatewayInterface;
 import User.entities.Item;
 
 public class GatewayFailureStub implements GatewayInterface
